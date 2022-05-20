@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,637 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fff;
+  overflow-x: hidden;
 }
-
+.App {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0px;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@font-face {
+  font-family: "Logo";
+  src: url("./TheHistoriaDemo.otf");
+  font-style: normal;
+}
+header {
+  width: 98%;
+  position: fixed;
+  margin-left: 1%;
+  z-index: 69;
+  opacity: 1;
+  height: 10vh;
+  box-shadow: 0px 15px 10px -15px rgba(21, 0, 59, 0.24);
+  background-color: #fff;
+  font-size: 20px;
+
+}
+.logo {
+  cursor: pointer;
+  font-family: 'Logo';
+  font-size: 35px;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-top: 10px;
+  font-weight: 300;
+  color: rgb(31, 0, 88);
+}
+.secondText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+.navBtn {
+  float: right;
+  padding: 5px;
+  border: none;
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(31, 0, 88);
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  border-radius: 5px;
+  margin-top: 3vh;
+  margin-right: 50px;
+}
+.winNft {
+  color: rgb(31, 0, 88);
+  margin: 0;
+  margin-top:30%;
+  width: 250px;
+  margin-left: -72px;
+  padding: 0;
+  margin-bottom:-20px;
+}
+.otherFont {
+  font-family: 'logo', sans-serif;
+  font-weight: 300;
+  font-size: 80px;
+
+}
+.navBtn:hover {
+  background-color: rgb(31, 0, 88);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: unset ;
+  width: 100%;
+  background-image: url('./img/mainBg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #fff;
+  display: flex;
+  z-index: 2100;
+}
+
+.modal {
+  z-index: 2500;
+  width: 300px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.817);
+  position: absolute;
+  color: rgb(31, 0, 88);
+  box-shadow: 10px 2px 20px 5px rgba(21, 0, 59, 0.24);
+  margin-top: 59px;
+  border-radius: 10px;
+  margin-left: 20px;
+  line-height:25px;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modalTwo {
+  z-index: 2500;
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+  position: absolute;
+  color: rgb(31, 0, 88);
+  margin-top: 59px;
+  border-radius: 10px;
+  margin-left: 820px;
+  line-height:20px;
+  padding: 2rem 2rem;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.verySmall {
+  line-height: 0.5px;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+}
+.infoTitle {
+  cursor: pointer;
+  font-family: 'Logo';
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 300;
+}
+.secondText {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+.infoParagraph {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  font-weight: 300;
+}
+.infoParagraphTwo {
+  text-align: justify;
+  line-height: 35px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.closeBtnModal {
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+  color: rgb(31, 0, 88);
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.closeBtnModal:hover {
+  background-color: rgb(31, 0, 88);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.img-gallery {
+  width: 50%;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 15px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.img-gallery::-webkit-scrollbar {
+  width: 0px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 30.5%;
+    flex: 30.5%;
+    max-width: 30.5%;
+  padding: 0 10px 30px 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  width: 97%;
+  border-radius: 3px;
+  box-shadow: 5px 2px 9px 2px rgba(21, 0, 59, 0.24);
+
+}
+
+.activityDiv {
+  width: 400px;
+  height: 420px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 10;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  box-shadow: 1px 2px 20px 9px rgba(21, 0, 59, 0.24);
+}
+.activityDivNFT {
+  width: 400px;
+  height: 430px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0 auto;
+  z-index: 10;
+  margin-top: 25px;
+  margin-bottom: 45px;
+  box-shadow: 1px 2px 20px 9px rgba(21, 0, 59, 0.24);
+}
+.randomWin {
+  margin-top: 25px;
+  margin-bottom:10px;
+
+}
+.outterProject {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 30px;
+  margin-left: 10%;
+  width: 80%;
+  height: auto;
+}
+.outter-minting {
+  position: absolute;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 80px;
+  margin-left: 10%;
+  width: 80%;
+  height: 40%;
+}
+.realMintOutter {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 50vh;
+  margin-left: 9%;
+  margin-bottom: 25px;
+  width: 80%;
+  border-top: 1px solid rgba(31, 0, 88, 0.609);
+  padding-top: 40px;
+  border-bottom: 1px solid rgba(31, 0, 88, 0.609);
+  height: 40%;
+}
+.userSinginMessage {
+  width: 300px;
+  margin-left: 90px;
+  color:rgb(31, 0, 88);
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  height: 200px;
+}
+.nftPopDiscription {
+  width: 300px;
+  margin-top: 60px;
+  margin-left: 90px;
+  color:rgb(31, 0, 88);
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  height: 200px;
+  font-size: 25px;
+  user-select: none;
+  text-align: justify;
+}
+.userSinginMessageText {
+  font-size: 25px;
+  user-select: none;
+  text-align: justify;
+}
+
+.cardMatamask {
+  width: 350px;
+  height: 205px;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 15px;
+  padding-top: 0;
+  box-shadow: 1px 2px 20px 9px rgba(21, 0, 59, 0.24);
+}
+
+.card-logo {
+  font-size: 25px;
+  margin-top: -20px;
+  color: rgb(31, 0, 88);
+  font-weight: 100;
+  user-select: none;
+}
+.logoCard {
+  font-family: 'logo';
+  font-size: 30px;
+}
+.keyTitle {
+  color: rgba(31, 0, 88, 0.538);
+  font-size: 20px;
+  
+}
+.publicKey {
+  color: rgb(31, 0, 88);
+  font-size: 11px;
+}
+.wallet {
+  font-size: 25px;
+  color: rgb(31, 0, 88);
+  font-weight: 100;
+  margin-top: 10px;
+  float: right;
+  cursor: pointer;
+}
+.walletBalance {
+  font-size: 20px;
+  color: rgba(31, 0, 88, 0.784);
+  font-weight: 100;
+  cursor: pointer;
+}
+.walletContent {
+  margin-top: -10px;
+}
+
+.nftPop {
+  width: 290px;
+  height: 330px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 1px 2px 8px rgba(21, 0, 59, 0.24);
+}
+.nftPopDetails {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(31, 0, 88);
+  font-weight: 300;
+  margin-left: 20px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.mintBtn {
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(31, 0, 88);
+  margin-right: 20px;
+  position: relative;
+  margin-top: -60px;
+  padding: 5px;
+  font-weight: 900;
+  border-radius: 5px;
+}
+.mintBtn:hover {
+  background-color: rgb(31, 0, 88);
+  color: #fff;
+}
+/* Tic-Tacto Game Create */
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.gameEnv {
+  margin-left: 120px;
+}
+
+.status {
+  color: rgb(31, 0, 88);
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  
+}
+mark {
+  padding: 8px;
+  background-color: rgb(34, 77, 96);
+  user-select: none;
+  color: #fff;
+}
+.ticTacToeLogo {
+  color: rgb(31, 0, 88);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  margin: 0 ;
+  user-select: none;
+  border-bottom: 1px solid rgb(31, 0, 88);
+  margin-top: 25px;
+  margin-bottom: 30px;
+  line-height: 20px;
+  padding: 8px;
+}
+.square {
+  border: 1px solid rgb(31, 0, 88);
+  float: left;
+  background-color: #fff;
+  font-size: 24px;
+  color: rgb(31, 0, 88);
+  font-weight: bold;
+  line-height: 34px;
+  height: 55px;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  width: 55px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: rgb(31, 0, 88);
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+.social {
+  text-align: center;
+  line-height: 30px;
+}
+
+.socialIcon {
+  padding: 5px;
+  text-decoration: none;
+  border: none;
+  font-size: 25px;
+  color: rgb(31, 0, 88);
+  font-family: 'Roboto', sans-serif;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.socialIcon:hover {
+  color: rgba(31, 0, 88, 0.489);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 30.5%;
+    flex: 30.5%;
+    max-width: 30.5%;
+    padding: 0 5px 10px 5px;
+  }
+  .backdrop { 
+    background-size: contain;
+    background-color: #fff;
+  }
+  .modalTwo {
+    margin-left: 90px;
+    width: 75%;
+    margin-top: 500px;
+  }
+  .outter-minting {
+    height: 70%;
+  }
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .img-gallery {
+    width: 80%;
+    height: 30vh;
+  }
+  .column {
+    -ms-flex: 30.5%;
+    flex: 30.5%;
+    max-width: 30.5%;
+    padding: 0 5px 10px 5px;
+  }
+  .modalTwo {
+    margin-left: 20px;
+    width: 75%;
+    margin-top: 500px;
+  }
+  .outterProject {
+    height: auto;
+    grid-template-columns: auto;
+  }
+  .outter-minting {
+    grid-template-columns: auto;
+  }
+  .realMintOutter {
+    grid-template-columns: auto;
+    padding-top: 20px;
+  }
+  .nftPopDiscription {
+    margin-left: -12px;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+  .userSinginMessage {
+    margin-left:0;
+    margin-bottom: -59px;
+  }
+  .cardMatamask {
+    width: 300px;
+    height: 150px;
+  }
+  .realMintOutter {
+    margin-top: 90vh;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .logo{
+    height: 10vh;
+    font-size: 37px;
+    margin-top: 0.8vh;
+    margin-left: 9px;
+  }
+  .activityDiv {
+    width: 70%;
+    margin-top: 40px;
+    height: 45vh;
+    padding: 20px;
+  }
+  .activityDivNFT {
+    width: 89%;
+    margin-top: 40px;
+    height: 46vh;
+    margin-left: -12px;
+    padding: 20px;
+  }
+  .navBtn {
+    margin-top: 17px;
+  }
+  .userSinginMessage {
+    margin-top: -25px;
+    margin-bottom: -20px;
+  }
+  .backdrop {
+    background-image: url('./img/two.png');
+    background-repeat: no-repeat;
+    background-size: 100% 88%;
+  }
+  .modal {
+    background-color: rgba(255, 255, 255, 0.757);
+    margin-left: 10px;
+    width: 75%;
+    margin-top: 90px;
+  }
+  .modalTwo {
+    margin-left: 10px;
+    width: 75%;
+    margin-top: 710px;
+  }
+  .winNft {
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: 200px;
+    margin-left:0;
+    margin-top: 10%;
+  }
+  .ticTacToeLogo {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .nftPop {
+    width: 220px;
+    height: 250px;
+    margin-top: 5px;
+  }
+  .img-gallery {
+    width: 90%;
+    height: 60vh;
+    padding-bottom: 10px;
+  }
+  .outterProject {
+    width: 90%;
+    overflow: hidden;
+    margin-left: 5%;
+  }
+  .outter-minting {
+    width: 93%;
+    overflow: hidden;
+    padding:  30px  0 15px 15px;
+    margin-left: 0%;
+  }
+  .activityDiv {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+  .column {
+    -ms-flex: 30%;
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 5px 40px 5px;
+  }
+  .gameEnv {
+    margin-left: 40px;
+  }
+  .status {
+    margin-bottom: 27px;
+  }
+
 }
