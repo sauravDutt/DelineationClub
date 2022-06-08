@@ -1,3 +1,5 @@
+// This is my Major Project
+
 import './index.css';
 import {motion} from 'framer-motion';
 import ImgGal from './components/ImgGal';
