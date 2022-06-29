@@ -60,7 +60,7 @@ const Modal = ({handleClose}) => {
                     <mark>A Random DelineationClub NFT</mark>
                     </p>
                     <p className='infoParagraphTwo'>
-                    To win a random DelineationClub NFT, you first havto to follow us on instagram and DM us the answer to the above riddle.
+                    To win a random DelineationClub NFT, you first havto to follow us on instagram and DM us the answer to the following equation,<br /> <span className='equation'>ax²+bx+c=0</span><br /> Find the value of "x". Also join our Discord, click on the arrow button below to see our vision.
                     </p>
                     <p className='social'>
                         <a className="socialIcon"  href='https://www.instagram.com/delineation.club/' target='_blank' rel="noreferrer"><i class="fa-brands fa-instagram"></i></a> <a className="socialIcon" href='https://discord.gg/74DwfZgZ'><i class="fa-brands fa-discord"></i></a><a className="socialIcon"  href="https://opensea.io/Delineation"  target='blank/'><i class="fa-solid fa-store"></i></a> <a className="socialIcon" href="https://vision.delineation.club/" target='blank/'><i class="fa-solid fa-location-arrow"></i></a>
