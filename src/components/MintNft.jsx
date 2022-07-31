@@ -10,8 +10,8 @@ const MintNft = () => {
                 Mint a Unique NFT <br/>at <i class="fa-brands fa-ethereum"></i> 0.08 Floor price
             </p>
             <span className="mintBtn">
-                    Mint
-                </span>
+                Mint
+            </span>
         </div>
     );
 }
