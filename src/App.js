@@ -120,7 +120,7 @@ function App() {
         </motion.div>
       </div>
       <div className='realMintOutter'>
-      <motion.div 
+        <motion.div 
               className="activityDivNFT"
               whileHover={{scale: 1.05}}
               whileTap={{scale: 0.91}}
