@@ -43,7 +43,7 @@ const Modal = ({handleClose}) => {
                 <p className='infoParagraph'>
                 <mark>Delineation.club</mark>, is a decentralized, secure, web 3.0 application, Provide members a variety of  utilities, such as NFT minting platform, followed by a secure Crypto (Ethereum) exchange (or transfer) system with minimal Gas Fee.
                 <br />
-                <span className='verySmall'>*** (4th May 2022), 21000 is the minimum amount of gas an operation on Ethereum will use. This limit is used to guarantee that the transaction will be executed.</span>
+                <span className='verySmall'>*** (4th May 2022), 21000 is the minimum amount of gas an operation on Ethereum will use. This limit is used to guarantee that the transaction will be executed. Also Checkout <a href="https://sauravdutt.github.io/Canvas_Practice/">Canvas Practice.</a>. <a href="https://sauravdutt.delineation.club/">Developer</a></span>
                 </p>
                 <motion.button className='closeBtnModal' whileHover={{scale: 1.1}} whileTap={{scale: 0.5}} onClick={handleClose}>close</motion.button>
             </motion.div>
